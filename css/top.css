@@ -1,0 +1,786 @@
+@charset "UTF-8";
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+	トップページ
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+
+
+/* ================================================================================
+
+	レイアウト
+
+================================================================================ */
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	main.outer_wrap {
+		position: relative;
+		max-width: none;
+		/* max-width: 1920px; 固定幅レイアウト時 */
+		width: 75%;
+		min-height: 50vh;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	main.outer_wrap {
+		position: relative;
+		width: 75%;
+	}
+}
+
+
+
+
+/* ================================================================================
+
+	メイン画像
+
+================================================================================ */
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	.main_top {
+		position: relative;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.main_top_text {
+		margin-top: 10px;
+		font-size: 30px;
+		line-height: 1.4;
+	}
+	.main_top_href{
+		margin-top: 10px;
+		font-size: 20px;
+		line-height: 1.4;
+	}
+	.main_img {
+		text-align: center;
+		width: 60%;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	.main_top {
+		position: relative;
+		text-align: center;
+		padding-bottom: 6vw;
+	}
+	.main_top_text {
+		margin-top: 1vw;
+		font-size: 4.5vw;
+		line-height: 1.4;
+	}
+	.main_top_href{
+		margin-top: 1vw;
+		font-size: 2.5vw;
+		line-height: 1.4;
+	}
+	.main_img {
+		text-align: center;
+		width: 60%;
+	}
+
+}
+
+
+
+
+
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+	ここからコンテンツ内容
+
+★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+
+
+
+/* ================================================================================
+
+	見出し
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+
+	/* 見出し
+	----------------------------------------------- */
+	.qa_text {
+		text-align: center;
+		font-size: 26px;
+	}
+	.title_top {
+		text-align: center;
+		font-size: 28px;
+		font-weight: 700;
+		display: inline-block;
+		border-bottom: 1px solid;
+	}
+
+	/* 見出し2
+	----------------------------------------------- */
+	.row02_in {
+		text-align: center;
+		position: relative;
+	}
+	.title_top2 {
+		text-align: center;
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+	.title_top2 span {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px solid;
+		margin-bottom: 20px;
+	}
+	.title_top2 span::before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 24px;
+		height: 40px;
+		top: 50%;
+		left: -40px;
+		margin-top: -20px;
+	}
+	.title_top2 span::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 24px;
+		height: 40px;
+		top: 50%;
+		right: -40px;
+		margin-top: -20px;
+	}
+
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+
+	/* 見出し
+	----------------------------------------------- */
+	.qa_text {
+		text-align: center;
+		font-size:4vw;
+	}
+	.title_top {
+		text-align: center;
+		font-size: 4vw;
+		font-weight: 700;
+	}
+
+	/* 見出し2
+	----------------------------------------------- */
+	.row02_in {
+		text-align: center;
+		position: relative;
+	}
+	.title_top2 {
+		text-align: center;
+		font-size: 4vw;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+	.title_top2 span {
+		position: relative;
+		display: inline-block;
+	}
+	.title_top2 span::before {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 5vw;
+		height: 9vw;
+		top: 50%;
+		left: -7vw;
+		margin-top: -3vw;
+	}
+	.title_top2 span::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 5vw;
+		height: 9vw;
+		top: 50%;
+		right: -7vw;
+		margin-top: -3vw;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	助成金のご相談、お急ぎください
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	.row01_in {
+		text-align: center;
+	}
+	.row01_in2 {
+		margin-top: 80px;
+	}
+	.row01_in .text {
+		margin-top: 24px;
+		font-size: 18px;
+	}
+	.row01_in .text2 {
+		display: inline-block;
+		text-align: left;
+		margin-top: 24px;
+		font-size: 18px;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	.row01_in {
+	}
+	.row01_in2 {
+		margin-top: 12vw;
+	}
+	.row01_in .text {
+		margin-top: 6vw;
+	}
+	.row01_in .text2 {
+		margin-top: 6vw;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	テイクアウト・デリバリー助成金についての概要
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	/* 表
+	----------------------------------------------- */
+	.row02_in table {
+		width: 100%;
+		border: 8px solid;
+		margin-top: 24px;
+	}
+	.row02_in table th {
+		background-color: burlywood;
+		padding: 20px;
+		font-size: 18px;
+		border: 1px solid;
+	}
+	.row02_in table td {
+		background-color: #ffffff;
+		padding: 20px;
+		font-size: 18px;
+		border: 1px solid;
+	}
+
+	/* 受付期間
+	----------------------------------------------- */
+	.date_box {
+		text-align: center;
+		font-size: 26px;
+		font-weight: 700;
+		margin-top: 24px;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	/* 表
+	----------------------------------------------- */
+	.row02_in table {
+		width: 100%;
+		border: 1.8vw solid;
+		margin-top: 4vw;
+	}
+	.row02_in table th {
+		display: block;
+		background-color: burlywood;
+		padding: 2vw;
+		font-size: 3vw;
+		border: 1px solid;
+	}
+	.row02_in table td {
+		display: block;
+		background-color: #ffffff;
+		padding: 3vw;
+		border: 1px solid;
+	}
+
+	/* 受付期間
+	----------------------------------------------- */
+	.date_box {
+		text-align: center;
+		font-size: 4vw;
+		font-weight: 700;
+		margin-top: 4vw;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	GR助成金BSパック
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	.row03 {
+		position: relative;
+		background: center top / 84px auto repeat;
+		padding: 80px 0;
+	}
+
+	/* GR助成金BSパック
+	----------------------------------------------- */
+	.bspack {
+		width: 800px;
+		margin: 24px auto 0;
+	}
+	.bspack h3 {
+		background-color: #fd470f;
+		color: #ffffff;
+		padding: 20px 40px;
+		font-size: 26px;
+	}
+	.bspack_in {
+		background-color: #ffffff;
+		padding: 20px 40px;
+		font-size: 22px;
+		line-height: 2;
+	}
+
+
+	/* 実績見出し
+	----------------------------------------------- */
+	.title_works {
+		text-align: center;
+		margin-top: 40px;
+		line-height: 1.5;
+	}
+	.title_works span {
+		display: inline-block;
+		border-bottom: 1px solid;
+		color: #ff4800;
+		font-size: 26px;
+		font-weight: 700;
+	}
+
+
+	/* リンクボタン
+	----------------------------------------------- */
+	.link_top {
+		text-align: center;
+		margin-top: 40px;
+	}
+	.link_top a {
+		display: inline-block;
+		line-height: 1;
+		padding: 1em 4em;
+		font-size: 20px;
+		background-color: #fd470f;
+		color: #ffffff;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	.row03 {
+		position: relative;
+		background: center top / 84px auto repeat;
+		padding: 12vw 6vw;
+	}
+
+	/* GR助成金BSパック
+	----------------------------------------------- */
+	.bspack {
+		margin-top: 6vw
+	}
+	.bspack h3 {
+		background-color: #fd470f;
+		color: #ffffff;
+		padding: 2vw 4vw;
+		font-size: 5vw;
+	}
+	.bspack_in {
+		background-color: #ffffff;
+		padding: 2vw 4vw;
+		font-size: 4vw;
+		line-height: 2;
+	}
+
+
+	/* 実績見出し
+	----------------------------------------------- */
+	.title_works {
+		text-align: center;
+		margin-top: 6vw;
+		line-height: 1.5;
+	}
+	.title_works span {
+		display: inline-block;
+		color: #ff4800;
+		font-size: 4.5vw;
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+
+	/* 実績
+	----------------------------------------------- */
+	.works_box {
+		padding: 0 15vw;
+		margin-top: 3vw;
+	}
+
+
+	/* リンクボタン
+	----------------------------------------------- */
+	.link_top {
+		text-align: center;
+		margin-top: 6vw;
+	}
+	.link_top a {
+		display: inline-block;
+		line-height: 1;
+		padding: 1em 4em;
+		font-size: 4vw;
+		background-color: #fd470f;
+		color: #ffffff;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	Q & A
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+
+	/* Q.質問内容 */
+	.q_text {
+		position: relative;
+		font-size: 18px;
+		background-color: burlywood;
+		padding: 1em 1em 1em 3em;
+		margin-top: 40px;
+		color: #222;
+	}
+	.q_text::before {
+		position: absolute;
+		content: "Q.";
+		display: block;
+		left: 30px;
+		top: 0.7em;
+		font-size: 20px;
+	}
+
+
+	/* A.回答内容 */
+	.a_text {
+		position: relative;
+		font-size: 18px;
+		padding: 1em 1em 0.5em 3em;
+	}
+	.a_text::before {
+		position: absolute;
+		content: "A.";
+		display: block;
+		left: 33px;
+		top: 0.7em;
+		font-size: 20px;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+
+	/* Q.質問内容 */
+	.q_text {
+		position: relative;
+		font-size: 3vw;
+		background-color: burlywood;
+		padding: 1em 1em 1em 3em;
+		margin-top: 6vw;
+	}
+	.q_text::before {
+		position: absolute;
+		content: "Q.";
+		display: block;
+		left: 4.5vw;
+		top: 0.5em;
+		font-size: 4vw;
+	}
+
+
+	/* A.回答内容 */
+	.a_text {
+		position: relative;
+		font-size: 3vw;
+		padding: 1em 1em 0.5em 3em;
+	}
+	.a_text::before {
+		position: absolute;
+		content: "A.";
+		display: block;
+		left: 4.8vw;
+		top: 0.5em;
+		font-size: 4vw;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	お問い合わせにあたって
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	.row04_in {
+		
+	}
+	.row04_in .text1 {
+		margin-top: 24px;
+		font-size: 17px;
+		text-align: center;
+	}
+	.row04_in .text2 {
+		margin-top: 12px;
+		background-color: #ffffff;
+		border: 8px solid;
+		padding: 30px;
+		font-size: 20px;
+	}
+	.row04_in .text3 {
+		margin-top: 12px;
+		font-size: 18px;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	.row04_in {
+	}
+	.row04_in .text1 {
+		margin-top: 4vw
+	}
+	.row04_in .text2 {
+		margin-top: 2vw;
+		background-color: #ffffff;
+		border: 2vw solid;
+		padding: 4vw;
+		font-size: 4vw;
+	}
+	.row04_in .text3 {
+		margin-top: 2vw;
+		font-size: 4vw;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	電話
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	.row05 {
+		position: relative;
+		background: #fd470f;
+		color: #ffffff;
+		border-top: 8px solid #ffffff;
+		border-bottom: 8px solid #ffffff;
+	}
+	.row05_in {
+		background: left top -8px / auto auto no-repeat;
+		height: 208px;
+	}
+
+	.row05_tel {
+		padding: 0 0 0 260px;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+	}
+	.row05_tel .text1 {
+		font-size: 28px;
+		color: #ffea00;
+	}
+	.row05_tel .text2 {
+		margin-top: -8px;
+	}
+	.row05_tel .text2 a {
+		display: block;
+		line-height: 1;
+		font-size: 60px;
+		color: #ffffff;
+		pointer-events: none;
+	}
+	.row05_tel .tel01 {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0.5em;
+		letter-spacing: 0.05em;
+		padding: 0.1em 0.3em 0 0
+	}
+	.row05_tel .tel02  {
+		display: inline-block;
+		vertical-align: middle;
+		letter-spacing: 0.05em;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	.row05 {
+		position: relative;
+		background: #fd470f;
+		color: #ffffff;
+		border-top: 2vw solid #ffffff;
+		border-bottom: 2vw solid #ffffff;
+	}
+	.row05_in {
+		background: left -8vw top -2vw / auto 115% no-repeat;
+		padding: 4vw 0 5vw 6vw;
+	}
+
+	.row05_tel {
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		padding: 0 0 0 19vw;
+	}
+	.row05_tel .text1 {
+		font-size: 5vw;
+		color: #ffea00;
+	}
+	.row05_tel .text2 {
+		margin-top: -1vw;
+	}
+	.row05_tel .text2 a {
+		display: block;
+		line-height: 1;
+		font-size: 8vw;
+		color: #ffffff;
+	}
+	.row05_tel .tel01 {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0.5em;
+		letter-spacing: 0.05em;
+		padding: 0.1em 0.3em 0 0
+	}
+	.row05_tel .tel02  {
+		display: inline-block;
+		vertical-align: middle;
+		letter-spacing: 0.05em;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	メールでのお問い合わせ
+
+================================================================================ */
+
+
+/* PC設定
+----------------------------------------------- */
+@media (min-width: 768px) {
+	.section-div {
+		position: relative;
+		background: center top / 84px auto repeat;
+		padding: 20px 0 40px;
+	}
+}
+
+
+/* SP設定
+----------------------------------------------- */
+@media (max-width: 767px) {
+	.section-div {
+		position: relative;
+		background: center top / 84px auto repeat;
+		padding: 3vw 3vw 6vw;
+	}
+}

@@ -1,0 +1,240 @@
+@charset 'UTF-8';
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+	コンタクトフォーム7　お問い合わせフォーム
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+
+
+/* ================================================================================
+
+	PC・SP共通設定
+
+================================================================================ */
+
+
+.table_email {
+	width: 100%;
+}
+
+/* ボーダー色 */
+.table_email th,
+.table_email td {
+	border-bottom: solid 1px #ffffff;
+}
+
+/* 住所ボーダー非表示 */
+.table_email tr.address_cell th,
+.table_email tr.address_cell td {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+/* 項目名 */
+.table_email th {
+	text-align: left;
+	font-weight: normal;
+}
+
+/* 必須 */
+.table_email th span {
+	color: #cc0000;
+	display: inline-block;
+	padding-left: 15px;
+	font-size: 90%;
+}
+
+/* 入力エリア */
+.table_email td input[type="text"],
+.table_email td input[type="email"],
+.table_email td textarea {
+	width: 100%;
+	border: solid 1px #cccccc;
+	padding: 0.8em;
+}
+
+/* セレクトボタン */
+.table_email select {
+	width: 150px;
+	border: solid 1px #cccccc;
+	padding: 5px;
+}
+
+/* ラジオボタン */
+.table_email input[type="radio"] {
+	vertical-align: -0.1em;
+}
+.table_email span.wpcf7-list-item,
+.table_email span.wpcf7-list-item.first {
+	margin: 0 1em 0 0;
+}
+
+/* 送信ボタン */
+.btn_submit {
+	text-align: center;
+}
+.wpcf7c-elm-step1 {
+	margin: 0 0 0 20px;
+}
+.btn_submit input[type="submit"],
+.btn_submit input[type="button"] {
+	background-color: burlywood;
+	color: lavenderblush;
+	border: none;
+	cursor: pointer;
+	cursor: hand;
+
+	opacity: 1;
+	transition-property: color,opacity,background-color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+}
+.btn_submit input[type="submit"]:hover,
+.btn_submit input[type="button"]:hover {
+	background-color: burlywood;
+}
+
+/* チェックボックス */
+.table_email input[type="checkbox"] {
+	vertical-align: -0.05em;
+}
+
+
+
+/* 確認画面
+----------------------------------------------- */
+input:-webkit-autofill.wpcf7c-conf {
+	-webkit-box-shadow: none !important;
+	border: none !important;
+	background: transparent !important;
+}
+input:-webkit-autofill.wpcf7c-conf:focus {
+	border: none !important;
+}
+.wpcf7c-conf {
+	background: transparent !important;
+	border-color: transparent !important;
+	color: inherit;
+}
+.wpcf7c-conf:focus {
+	border-color: transparent !important;
+}
+
+
+
+
+/* ================================================================================
+
+	PC設定
+
+================================================================================ */
+@media (min-width: 768px) {
+
+	/* プライバシーポリシー
+	----------------------------------------------- */
+	.privacy_policy {
+		position: relative;
+		background-color: #ffffff;
+		padding: 40px;
+		margin: 40px auto 0;
+	}
+	.privacy_policy h3 {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+
+	/* コンタクトフォーム
+	----------------------------------------------- */
+	.table_email {
+		margin-bottom: 30px;
+	}
+	.table_email th,
+	.table_email td {
+		padding: 15px;
+	}
+	.table_email th {
+		width: 250px;
+		vertical-align: middle;
+	}
+
+	/* 郵便番号 */
+	.table_email input#zip1 {
+		width: 100px;
+	}
+	.table_email input#zip2 {
+		width: 160px;
+	}
+
+	/* 送信ボタン */
+	.btn_submit input {
+		padding: 15px 60px;
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+/* ================================================================================
+
+	SP設定
+
+================================================================================ */
+@media (max-width: 767px) {
+
+	/* プライバシーポリシー
+	----------------------------------------------- */
+	.privacy_policy {
+		position: relative;
+		background-color: #ffffff;
+		padding: 4vw;
+		margin: 6vw auto 0;
+	}
+	.privacy_policy h3 {
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+
+	/* コンタクトフォーム
+	----------------------------------------------- */
+	.table_email {
+		margin-bottom: 3%;
+	}
+	.table_email th,
+	.table_email td {
+		width: 100%;
+		display: block;
+	}
+	.table_email th {
+		border-bottom: none;
+		padding: 3% 0 1%;
+	}
+	.table_email td {
+		padding-bottom: 5%;
+	}
+
+	/* ラジオボタン */
+	span.wpcf7-list-item {
+		margin: 0 !important;
+		display: block;
+	}
+
+	/* 郵便番号 */
+	.table_email input#zip1 {
+		width: 36%;
+	}
+	.table_email input#zip2 {
+		width: 42%;
+	}
+
+	/* 送信ボタン */
+	.btn_submit input {
+		padding: 15px 40px;
+	}
+}

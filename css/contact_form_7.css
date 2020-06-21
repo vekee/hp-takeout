@@ -71,30 +71,27 @@
 	margin: 0 1em 0 0;
 }
 
+.div_button{
+	text-align: center;
+	position: relative;
+}
 /* 送信ボタン */
 .btn_submit {
+	position: center;
 	text-align: center;
-}
-.wpcf7c-elm-step1 {
-	margin: 0 0 0 20px;
-}
-.btn_submit input[type="submit"],
-.btn_submit input[type="button"] {
+	text-decoration: none;
+	display: inline-block;
 	background-color: burlywood;
-	color: lavenderblush;
+	color: white;
 	border: none;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
 	cursor: pointer;
-	cursor: hand;
-
-	opacity: 1;
-	transition-property: color,opacity,background-color;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out;
-	transition-delay: 0s;
 }
-.btn_submit input[type="submit"]:hover,
-.btn_submit input[type="button"]:hover {
-	background-color: burlywood;
+.btn_submit:hover {
+	background-color: #d8d8d8;
+	color: white;
 }
 
 /* チェックボックス */
@@ -170,9 +167,9 @@ input:-webkit-autofill.wpcf7c-conf:focus {
 	}
 
 	/* 送信ボタン */
-	.btn_submit input {
+	.btn_submit {
 		padding: 15px 60px;
-		font-size: 18px;
+		font-size: 20px;
 	}
 }
 
@@ -234,7 +231,7 @@ input:-webkit-autofill.wpcf7c-conf:focus {
 	}
 
 	/* 送信ボタン */
-	.btn_submit input {
+	.btn_submit {
 		padding: 15px 40px;
 	}
 }
